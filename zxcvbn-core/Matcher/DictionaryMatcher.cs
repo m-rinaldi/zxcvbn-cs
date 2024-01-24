@@ -107,7 +107,7 @@ namespace Zxcvbn.Matcher
                 if (actualWord.Contains(" "))
                     actualWord = actualWord.Split(new[] { " " }, StringSplitOptions.RemoveEmptyEntries)[0];
 
-                // The word list is assumed to be in increasing frequency order
+                // The word list is assumed to be in decreasing frequency order
                 dict[actualWord] = i++;
             }
 
